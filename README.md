@@ -10,7 +10,7 @@
 
 # kido
 
-Analyze library for Deno
+Negaposi scoring library for Deno
 
 <br>
 <br>
