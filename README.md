@@ -23,7 +23,16 @@ Negaposi scoring library for Deno
 
 ## 🚀 How to use
 
-```
+```ts
+import { analyze, getDictRowArray } from "jsr:@comamoca/kido";
+
+// Setup dictionary
+const dict = await getDictRowArray()
+
+// Analyze negaposi score
+const score = analyze("高まるぞ！ぜったい　いっぱい　輝け！人生は一度きりなんだ", dict)
+
+console.log(score) // => 0.8797344005361823
 ```
 
 ## ⬇️ Install
