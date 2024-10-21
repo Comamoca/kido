@@ -1,0 +1,13 @@
+{
+  "imports": {
+    "@core/unknownutil": "jsr:@core/unknownutil@^4.3.0",
+    "@es-toolkit/es-toolkit": "jsr:@es-toolkit/es-toolkit@^1.25.2",
+    "@std/bytes": "jsr:@std/bytes@^1.0.2",
+    "@std/csv": "jsr:@std/csv@^1.0.3",
+    "@std/streams": "jsr:@std/streams@^1.0.7",
+    "@valibot/valibot": "jsr:@valibot/valibot@^0.42.1",
+    "goya-core": "npm:goya-core@^0.1.9",
+    "goya-features": "npm:goya-features@^0.1.9",
+    "moji": "npm:moji@^0.5.1"
+  }
+}

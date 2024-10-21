@@ -1,0 +1,77 @@
+{
+  "version": "3",
+  "packages": {
+    "specifiers": {
+      "jsr:@core/unknownutil@^4.3.0": "jsr:@core/unknownutil@4.3.0",
+      "jsr:@es-toolkit/es-toolkit@^1.25.2": "jsr:@es-toolkit/es-toolkit@1.25.2",
+      "jsr:@std/bytes@^1.0.2": "jsr:@std/bytes@1.0.2",
+      "jsr:@std/csv@^1.0.3": "jsr:@std/csv@1.0.3",
+      "jsr:@std/streams@^1.0.4": "jsr:@std/streams@1.0.7",
+      "jsr:@std/streams@^1.0.7": "jsr:@std/streams@1.0.7",
+      "jsr:@valibot/valibot@^0.42.1": "jsr:@valibot/valibot@0.42.1",
+      "npm:goya-core@^0.1.9": "npm:goya-core@0.1.9",
+      "npm:goya-features@^0.1.9": "npm:goya-features@0.1.9",
+      "npm:moji@^0.5.1": "npm:moji@0.5.1"
+    },
+    "jsr": {
+      "@core/unknownutil@4.3.0": {
+        "integrity": "538a3687ffa81028e91d148818047df219663d0da671d906cecd165581ae55cc"
+      },
+      "@es-toolkit/es-toolkit@1.25.2": {
+        "integrity": "90f17bcdad02f6dc16c705f65ddb83a2fe439045727e108b5075744ae8f8209e"
+      },
+      "@std/bytes@1.0.2": {
+        "integrity": "fbdee322bbd8c599a6af186a1603b3355e59a5fb1baa139f8f4c3c9a1b3e3d57"
+      },
+      "@std/csv@1.0.3": {
+        "integrity": "623acf0dcb88d62ba727c3611ad005df7f109ede8cac833e3986f540744562e5",
+        "dependencies": [
+          "jsr:@std/streams@^1.0.4"
+        ]
+      },
+      "@std/streams@1.0.7": {
+        "integrity": "1a93917ca0c58c01b2bfb93647189229b1702677f169b6fb61ad6241cd2e499b",
+        "dependencies": [
+          "jsr:@std/bytes@^1.0.2"
+        ]
+      },
+      "@valibot/valibot@0.42.1": {
+        "integrity": "ba0f6f7964aaeec0e4b1f793d575061f325ae6254cbb9d7ff01fb65068a0a23b"
+      }
+    },
+    "npm": {
+      "goya-core@0.1.9": {
+        "integrity": "sha512-Dn8pSSoKLzw+aS3wnVOu35VlOXPJ9VOjKUoDFkDibnGmuiSc6UkPXQt5EaPoJmbykWnCpghFAZ6i7ZBSiTds2g==",
+        "dependencies": {}
+      },
+      "goya-features@0.1.9": {
+        "integrity": "sha512-9afIPD+sqgV8v2e7O9YGLnl29qifoUd6NyGIeQFpmKfAAuKw7VZkd6N5jfubhYXqk5EYHCqLfaABnqD3lg9CfA==",
+        "dependencies": {}
+      },
+      "moji@0.5.1": {
+        "integrity": "sha512-xYylXOjBS9mE/d690InK3Y74NpE0El0TmAKDmKJveWk9jds/0Tl7MQP4yhavS0U64diEq+5ey2905nhCpIHE+Q==",
+        "dependencies": {
+          "object-assign": "object-assign@3.0.0"
+        }
+      },
+      "object-assign@3.0.0": {
+        "integrity": "sha512-jHP15vXVGeVh1HuaA2wY6lxk+whK/x4KBG88VXeRma7CCun7iGD5qPc4eYykQ9sdQvg8jkwFKsSxHln2ybW3xQ==",
+        "dependencies": {}
+      }
+    }
+  },
+  "remote": {},
+  "workspace": {
+    "dependencies": [
+      "jsr:@core/unknownutil@^4.3.0",
+      "jsr:@es-toolkit/es-toolkit@^1.25.2",
+      "jsr:@std/bytes@^1.0.2",
+      "jsr:@std/csv@^1.0.3",
+      "jsr:@std/streams@^1.0.7",
+      "jsr:@valibot/valibot@^0.42.1",
+      "npm:goya-core@^0.1.9",
+      "npm:goya-features@^0.1.9",
+      "npm:moji@^0.5.1"
+    ]
+  }
+}
