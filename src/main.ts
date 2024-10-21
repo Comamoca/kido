@@ -1,6 +1,6 @@
 import core from "goya-core";
 import { get_features } from "goya-features";
-import { Dict, DictRow, posiNegaRatioType } from "./type.ts";
+import type { Dict, DictRow, posiNegaRatioType } from "./type.ts";
 
 /**
  * @description Analyze negaposi score from text.
@@ -21,7 +21,7 @@ export function analyze(
   const tokens = get_features(morphemes.map((morph) => morph.wid));
 
   const feature = morphemes.map(
-    ({ surface_form }, i): Omit<DictRow, "rank"> => {
+    ({ _surface_form }, i): Omit<DictRow, "rank"> => {
       const feature = tokens[i];
 
       // 単語そのもの
