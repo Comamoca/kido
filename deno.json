@@ -1,7 +1,7 @@
 {
   "name": "@comamoca/kido",
   "version": "0.1.0",
-  "exports": "./src/main.ts",
+  "exports": "./src/mod.ts",
   "lint": {
     "rules": {
       "exclude": [
