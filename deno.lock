@@ -8,7 +8,6 @@
       "jsr:@std/csv@^1.0.3": "jsr:@std/csv@1.0.3",
       "jsr:@std/streams@^1.0.4": "jsr:@std/streams@1.0.7",
       "jsr:@std/streams@^1.0.7": "jsr:@std/streams@1.0.7",
-      "jsr:@valibot/valibot@^0.42.1": "jsr:@valibot/valibot@0.42.1",
       "npm:goya-core@^0.1.9": "npm:goya-core@0.1.9",
       "npm:goya-features@^0.1.9": "npm:goya-features@0.1.9",
       "npm:moji@^0.5.1": "npm:moji@0.5.1"
@@ -34,9 +33,6 @@
         "dependencies": [
           "jsr:@std/bytes@^1.0.2"
         ]
-      },
-      "@valibot/valibot@0.42.1": {
-        "integrity": "ba0f6f7964aaeec0e4b1f793d575061f325ae6254cbb9d7ff01fb65068a0a23b"
       }
     },
     "npm": {
@@ -68,7 +64,6 @@
       "jsr:@std/bytes@^1.0.2",
       "jsr:@std/csv@^1.0.3",
       "jsr:@std/streams@^1.0.7",
-      "jsr:@valibot/valibot@^0.42.1",
       "npm:goya-core@^0.1.9",
       "npm:goya-features@^0.1.9",
       "npm:moji@^0.5.1"
