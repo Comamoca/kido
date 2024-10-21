@@ -9,7 +9,7 @@ const decoder = new TextDecoder("shift-jis");
  * @description Fetch the word emotion polarity correspondence table and cache it in localStorage.
  * @function
  */
-export async function getNegaPosiDict() {
+export async function getNegaPosiDict(): Promise<string> {
   const dict_url = "http://www.lr.pi.titech.ac.jp/~takamura/pubs/pn_ja.dic";
   const negaPosiDict = localStorage.getItem("dict");
 
