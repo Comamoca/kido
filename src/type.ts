@@ -8,8 +8,7 @@ export type DictRow = {
 export const isDictRow = (item: unknown): item is DictRow => {
   return (
     !!(item as DictRow)?.pos && !!(item as DictRow).rank &&
-    !!(item as DictRow)?.reading && !!(item as DictRow)?.reading &&
-    !!(item as DictRow)?.surface
+    !!(item as DictRow)?.reading && !!(item as DictRow)?.surface
   );
 };
 
