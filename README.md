@@ -49,10 +49,6 @@ deno add @comamoca/kido
 deno check *.ts
 ```
 
-## 📜 License
-
-MIT
-
 ## ❓ FAQ
 
 ### I got Error `Dictionary contains an invalid value`
@@ -64,9 +60,13 @@ In Linux, that directory at `~/.cache/deno/location_data/`.
 
 The name from four-character idiom 喜怒哀楽(kidoairaku) it mean various human emotions in Japanease.
 
-### What mean sample text at [Hot to use](#-how-to-use)
+### What mean sample text at [How to use](#-how-to-use)
 
 https://www.youtube.com/watch?v=O8CPTwwbvBA
+
+## 📜 License
+
+MIT
 
 ## 🧩 Modules
 
