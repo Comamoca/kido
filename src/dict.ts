@@ -1,5 +1,6 @@
 import { parse } from "@std/csv";
-import type { Dict, DictRow, isDictRow } from "./type.ts";
+import type { Dict, DictRow } from "./type.ts";
+import { isDictRow } from "./type.ts"
 import moji from "moji";
 import { is } from "@core/unknownutil";
 
