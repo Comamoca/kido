@@ -1,8 +1,7 @@
 import { parse } from "@std/csv";
-import type { DictRow, DictRowSchema } from "./type.ts";
+import { Dict, DictRow, isDictRow } from "./type.ts";
 import moji from "moji";
 import { is } from "@core/unknownutil";
-import * as v from "@valibot/valibot";
 
 const decoder = new TextDecoder("shift-jis");
 
@@ -32,7 +31,7 @@ export async function getNegaPosiDict() {
  * @description Call `getNegaPosiDict` to generate the JSON format of the dictionary and cache it in localStorage.
  * @function
  */
-export async function getDictRowArray(): Promise<Array<DictRow>> {
+export async function getDictRowArray(): Promise<Dict> {
   const dictRow = localStorage.getItem("dictRowArray");
 
   if (is.Null(dictRow)) {
@@ -42,7 +41,11 @@ export async function getDictRowArray(): Promise<Array<DictRow>> {
     return dictRow;
   }
 
-  return v.parse(v.array(DictRowSchema), JSON.parse(dictRow));
+  if (isDictRow(dictRow)) {
+    return JSON.parse(dictRow) as Dict;
+  } else {
+    throw TypeError("Dictionary contains an invalid value");
+  }
 }
 
 async function makeDictRowArray() {

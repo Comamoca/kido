@@ -15,7 +15,7 @@ export function analyze(
     nega: 49983,
     zero: 20,
   },
-) {
+): number {
   const lattice = core.parse(text);
   const morphemes = lattice.find_best();
   const tokens = get_features(morphemes.map((morph) => morph.wid));

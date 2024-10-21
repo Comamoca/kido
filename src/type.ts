@@ -1,23 +1,34 @@
-import * as v from "@valibot/valibot";
+export type DictRow = {
+  surface: string;
+  reading: string;
+  pos: string;
+  rank: number;
+};
 
-export const DictRowSchema = v.object({
-  surface: v.string(),
-  reading: v.string(),
-  pos: v.string(),
-  rank: v.number(),
-});
+export const isDictRow = (item: unknown): item is DictRow => {
+  return (
+    !!(item as DictRow)?.pos && !!(item as DictRow).rank &&
+    !!(item as DictRow)?.reading && !!(item as DictRow)?.reading &&
+    !!(item as DictRow)?.surface
+  );
+};
 
-export type DictRow = v.InferOutput<typeof DictRowSchema>;
 export type Dict = Array<DictRow>;
 
 export type analyzeOption = {
   text: string;
 };
 
-export const posiNegaRatioTypeSchema = v.object({
-  posi: v.number(),
-  nega: v.number(),
-  zero: v.number(),
-});
+export type posiNegaRatioType = {
+  posi: number;
+  nega: number;
+  zero: number;
+};
 
-export type posiNegaRatioType = v.InferOutput<typeof posiNegaRatioTypeSchema>;
+export const posiNegaRatioType = (item: unknown): item is posiNegaRatioType => {
+  return (
+    !!(item as posiNegaRatioType)?.nega &&
+    !!(item as posiNegaRatioType)?.posi &&
+    !!(item as posiNegaRatioType)?.zero
+  );
+};
