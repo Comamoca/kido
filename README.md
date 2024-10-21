@@ -53,7 +53,22 @@ deno check *.ts
 
 MIT
 
-### 🧩 Modules
+## ❓ FAQ
+
+### I got Error `Dictionary contains an invalid value`
+
+Please remove deno localStrage cache.
+In Linux, that directory at `~/.cache/deno/location_data/`.
+
+### Why mean kido?
+
+The name from four-character idiom 喜怒哀楽(kidoairaku) it mean various human emotions in Japanease.
+
+### What mean sample text at [Hot to use](#-how-to-use)
+
+https://www.youtube.com/watch?v=O8CPTwwbvBA
+
+## 🧩 Modules
 
 - [@core/unknownutil](https://jsr.io/@core/unknownutil)
 - [@es-toolkit/es-toolkit](https://jsr.io/@es-toolkit/es-toolkit)
