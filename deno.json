@@ -1,4 +1,7 @@
 {
+  "name": "@comamoca/kido",
+  "version": "0.1.0",
+  "exports": "./src/main.ts",
   "imports": {
     "@core/unknownutil": "jsr:@core/unknownutil@^4.3.0",
     "@es-toolkit/es-toolkit": "jsr:@es-toolkit/es-toolkit@^1.25.2",
