@@ -32,17 +32,20 @@ export async function getNegaPosiDict(): Promise<string> {
  * @function
  */
 export async function getDictRowArray(): Promise<Dict> {
-  const dictRow = localStorage.getItem("dictRowArray");
+  const dictString = localStorage.getItem("dictRowArray");
 
-  if (is.Null(dictRow)) {
-    const dictRow = await makeDictRowArray();
-    localStorage.setItem("dictRowArray", JSON.stringify(dictRow));
+  if (is.Null(dictString)) {
+    const dictRowArray = await makeDictRowArray();
 
-    return dictRow;
+    localStorage.setItem("dictRowArray", JSON.stringify(dictRowArray.filter(isDictRow)));
+
+    return dictRowArray;
   }
 
-  if (isDictRow(dictRow)) {
-    return JSON.parse(dictRow) as Dict;
+  const dict = JSON.parse(dictString)
+
+  if (dict.every(isDictRow)) {
+    return dict as Dict;
   } else {
     throw TypeError("Dictionary contains an invalid value");
   }
